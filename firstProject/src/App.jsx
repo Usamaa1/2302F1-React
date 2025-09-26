@@ -32,9 +32,9 @@ export const App = () => {
     <>
 
     {
-        data.map(({username,designation,email,age},i)=> (
+        data.map((a,i)=> (
 
-            <PropComponent key={i} username={username} designation={designation} email={email} age={age}></PropComponent>
+            <PropComponent key={i} username={a.username} designation={a.designation} email={a.email} age={a.age}></PropComponent>
         )
         )
     }
