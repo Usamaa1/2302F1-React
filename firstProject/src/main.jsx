@@ -1,13 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { FirstComponent } from './Component/FirstComponent/FirstComponent'
+// import { FirstComponent } from './Component/FirstComponent/FirstComponent'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { UseStateHook } from './Component/Hooks/UseStateHook/UseStateHook';
-import { App } from './App';
+// import { UseStateHook } from './Component/Hooks/UseStateHook/UseStateHook';
+// import { App } from './App';
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import { AppLayout } from './AppLayout';
+// import { UseNavHook } from './Component/Hooks/UseNavHook/UseNavHook';
+import { router } from './routers';
 
 // const router = createBrowserRouter([
 //   {
@@ -29,26 +31,35 @@ import { AppLayout } from './AppLayout';
 // ]);
 
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    Component: AppLayout,
-    children: [
-      {
-        index: true,
-        Component: App
-      },
-      {
-        path: "/firstComponent",
-        Component: FirstComponent,
-      },
-      {
-        path: "/useStateHook",
-        Component: UseStateHook,
-      },
-    ]
-  }
-])
+
+
+
+
+
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     Component: AppLayout,
+//     children: [
+//       {
+//         index: true,
+//         Component: App
+//       },
+//       {
+//         path: "/firstComponent",
+//         Component: FirstComponent,
+//       },
+//       {
+//         path: "/useStateHook",
+//         Component: UseStateHook,
+//       },
+//       {
+//         path: "/useNavHook",
+//         Component: UseNavHook,
+//       },
+//     ]
+//   }
+// ])
 
 
 createRoot(document.getElementById('root')).render(

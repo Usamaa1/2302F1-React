@@ -7,6 +7,7 @@ const navigation = [
 //   { name: 'App', href: 'app', current: false },
   { name: 'First Component', href: 'firstComponent', current: false },
   { name: 'Use State Hook', href: 'useStateHook', current: false },
+  { name: 'Use Nav Hook', href: 'useNavHook', current: false },
 ]
 
 function classNames(...classes) {

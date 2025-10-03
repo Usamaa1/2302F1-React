@@ -1,0 +1,74 @@
+import { createBrowserRouter } from "react-router";
+import { AppLayout } from './AppLayout';
+// import { UseNavHook } from './Component/Hooks/UseNavHook/UseNavHook';
+// import { UseStateHook } from './Component/Hooks/UseStateHook/UseStateHook';
+// import { App } from './App';
+// import { FirstComponent } from './Component/FirstComponent/FirstComponent'
+import { lazy } from "react";
+
+
+
+
+const AppComponent = lazy(()=> import('./App'))
+const FirstComp = lazy(()=>import('./Component/FirstComponent/FirstComponent'))
+const UseNavHookComponent = lazy(()=>import('./Component/Hooks/UseNavHook/UseNavHook'))
+const UseStateHookComponent = lazy(()=>import('./Component/Hooks/UseStateHook/UseStateHook'))
+
+
+
+
+
+
+
+
+// export const router = createBrowserRouter([
+//     {
+//       path: '/',
+//       Component: AppLayout,
+//       children: [
+//         {
+//           index: true,
+//           Component: App
+//         },
+//         {
+//           path: "/firstComponent",
+//           Component: FirstComponent,
+//         },
+//         {
+//           path: "/useStateHook",
+//           Component: UseStateHook,
+//         },
+//         {
+//           path: "/useNavHook",
+//           Component: UseNavHook,
+//         },
+//       ]
+//     }
+//   ])
+
+
+
+export const router = createBrowserRouter([
+    {
+      path: '/',
+      Component: AppLayout,
+      children: [
+        {
+          index: true,
+          Component: AppComponent
+        },
+        {
+          path: "/firstComponent",
+          Component: FirstComp,
+        },
+        {
+          path: "/useStateHook",
+          Component: UseNavHookComponent,
+        },
+        {
+          path: "/useNavHook",
+          Component: UseStateHookComponent,
+        },
+      ]
+    }
+  ])

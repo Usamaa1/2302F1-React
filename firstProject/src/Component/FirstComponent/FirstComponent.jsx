@@ -8,7 +8,7 @@ import './style.css'
 import shipImage from '../../images/1.jpg'
 
 
-export const FirstComponent = () => {
+const FirstComponent = () => {
   return (
    <>
    
@@ -31,7 +31,7 @@ export const FirstComponent = () => {
 
    <Button variant='primary'>Click me</Button>
 
-   <img src="public/2.jpg" width={200} />
+   <img src="/2.jpg" width={200} />
    <br />
    <img src={shipImage} width={200} />
 
@@ -39,3 +39,4 @@ export const FirstComponent = () => {
 
   )
 }
+export default FirstComponent;

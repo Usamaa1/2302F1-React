@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export const UseStateHook = () => {
+ const UseStateHook = () => {
 //   let count = 0;
 
 const [isCount,setCount] = useState(0);
@@ -18,6 +18,7 @@ const [isCount,setCount] = useState(0);
     </>
   )
 }
+export default UseStateHook;
 
 // import React from 'react'
 

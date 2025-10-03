@@ -27,7 +27,7 @@ const data = [
 
 
 
-export const App = () => {
+ const App = () => {
   return (
     <>
 
@@ -44,3 +44,4 @@ export const App = () => {
 
   )
 }
+export default App;
