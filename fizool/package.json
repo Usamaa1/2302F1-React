@@ -1,5 +1,5 @@
 {
-  "name": "firstproject",
+  "name": "fizool",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,16 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@headlessui/react": "^2.2.9",
-    "@heroicons/react": "^2.2.0",
-    "@tailwindcss/vite": "^4.1.13",
     "bootstrap": "^5.3.8",
     "react": "^19.1.1",
     "react-bootstrap": "^2.10.10",
-    "react-dom": "^19.1.1",
-    "react-hook-form": "^7.64.0",
-    "react-router": "^7.9.2",
-    "tailwindcss": "^4.1.13"
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

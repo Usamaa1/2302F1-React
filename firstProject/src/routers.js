@@ -9,10 +9,13 @@ import { lazy } from "react";
 
 
 
+
 const AppComponent = lazy(()=> import('./App'))
 const FirstComp = lazy(()=>import('./Component/FirstComponent/FirstComponent'))
 const UseNavHookComponent = lazy(()=>import('./Component/Hooks/UseNavHook/UseNavHook'))
 const UseStateHookComponent = lazy(()=>import('./Component/Hooks/UseStateHook/UseStateHook'))
+const UseRefHookComponent = lazy(()=>import('./Component/Hooks/UseRefHook/UseRefHook'))
+const FormValidation = lazy(()=>import('./Component/FormValidation/FormValidation'))
 
 
 
@@ -68,6 +71,14 @@ export const router = createBrowserRouter([
         {
           path: "/useNavHook",
           Component: UseStateHookComponent,
+        },
+        {
+          path: "/useRefHook",
+          Component: UseRefHookComponent,
+        },
+        {
+          path: "/formValidation",
+          Component: FormValidation,
         },
       ]
     }
