@@ -16,6 +16,7 @@ const UseNavHookComponent = lazy(()=>import('./Component/Hooks/UseNavHook/UseNav
 const UseStateHookComponent = lazy(()=>import('./Component/Hooks/UseStateHook/UseStateHook'))
 const UseRefHookComponent = lazy(()=>import('./Component/Hooks/UseRefHook/UseRefHook'))
 const FormValidation = lazy(()=>import('./Component/FormValidation/FormValidation'))
+const UseEffectHook = lazy(()=>import('./Component/Hooks/UseEffectHook/UseEffectHook'))
 
 
 
@@ -79,6 +80,10 @@ export const router = createBrowserRouter([
         {
           path: "/formValidation",
           Component: FormValidation,
+        },
+        {
+          path: "/useEffect",
+          Component: UseEffectHook,
         },
       ]
     }
