@@ -21,6 +21,7 @@ export const BootstrapNavbar = () => {
             <Nav.Link as={Link} to="/useNavHook">Use Nav Hook</Nav.Link>
             <Nav.Link as={Link} to="/useRefHook">Use Ref Hook</Nav.Link>
             <Nav.Link as={Link} to="/useEffect">Use Effect</Nav.Link>
+            <Nav.Link as={Link} to="/useContextHook">Use Context Hook</Nav.Link>
             <Nav.Link as={Link} to="/formValidation">Form Validation</Nav.Link>
           </Nav>
         </Navbar.Collapse>

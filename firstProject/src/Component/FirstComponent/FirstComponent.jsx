@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React, {useContext} from 'react'
+import { MyContext } from '../Hooks/UseContextHook/ContextProvider'
 import { Button } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card';
 
@@ -9,6 +9,12 @@ import shipImage from '../../images/1.jpg'
 
 
 const FirstComponent = () => {
+  
+  const useData = useContext(MyContext)
+
+  console.log(useData);
+
+
   return (
    <>
    

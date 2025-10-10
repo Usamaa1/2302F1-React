@@ -10,6 +10,7 @@ import { RouterProvider } from "react-router/dom";
 import { AppLayout } from './AppLayout';
 // import { UseNavHook } from './Component/Hooks/UseNavHook/UseNavHook';
 import { router } from './routers';
+import ContextProvider from './Component/Hooks/UseContextHook/ContextProvider';
 
 // const router = createBrowserRouter([
 //   {
@@ -69,7 +70,11 @@ createRoot(document.getElementById('root')).render(
     {/* <UseStateHook></UseStateHook> */}
 
     {/* <App></App> */}
-    <RouterProvider router={router} />,
+    <ContextProvider>
+
+      <RouterProvider router={router} />,
+
+    </ContextProvider>
 
 
 
