@@ -18,6 +18,8 @@ const UseRefHookComponent = lazy(()=>import('./Component/Hooks/UseRefHook/UseRef
 const FormValidation = lazy(()=>import('./Component/FormValidation/FormValidation'))
 const UseEffectHook = lazy(()=>import('./Component/Hooks/UseEffectHook/UseEffectHook'))
 const UseContextHook = lazy(()=>import('./Component/Hooks/UseContextHook/UseContextHook'))
+const UseMemoHook = lazy(()=>import('./Component/Hooks/UseMemoHook/UseMemoHook'))
+const UseCallBackHook = lazy(()=>import('./Component/Hooks/UseCallBackHook/UseCallBackHook'))
 
 
 
@@ -89,6 +91,14 @@ export const router = createBrowserRouter([
         {
           path: "/useContextHook",
           Component: UseContextHook,
+        },
+        {
+          path: "/useMemoHook",
+          Component: UseMemoHook,
+        },
+        {
+          path: "/useCallBackHook",
+          Component: UseCallBackHook,
         },
       ]
     }
